@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    gap: 10px; 
+    overflow-x: auto;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 6px rgb(0 0 0 / 0.05);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.3;
+    min-height: 70px;
+    margin: 0;
+}

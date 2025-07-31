@@ -1,0 +1,25 @@
+.icon-row {
+    display: flex;
+    justify-content: center; 
+    
+    gap: 25px;                 
+  }
+  
+  .icon-item {
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .icon-item img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 6px auto;
+  }
+  
+  .icon-item span {
+    font-size: 12px;
+    white-space: nowrap;
+    color: #444;
+  }

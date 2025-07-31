@@ -1,0 +1,174 @@
+.amazing-container {
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  .amazing {
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(225deg, #d22c4e, #ee384e 41.68%, #ef5662);
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  user-select: none;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  &.mainAmazing {
+    background-color: transparent;
+    .logo {
+      svg {
+        width: 85%;
+      }
+    }
+    .smile {
+      svg {
+        width: 80%;
+      }
+    }
+    .seeAll {
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: iranYekan;
+        font-size: 14px;
+      }
+    }
+  }
+  .image {
+    .img {
+      box-sizing: border-box;
+    }
+  }
+  .descrioption {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: iranYekan;
+    font-size: 12px;
+    color: #424750;
+  }
+  .price {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    direction: ltr;
+    .newPrice {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: start;
+      align-items: center;
+      gap: 5px;
+      direction: rtl;
+      .toman {
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: #424750;
+        }
+      }
+      .amount {
+        font-family: iranYekan;
+        font-size: 14px;
+        color: black;
+      }
+    }
+    .percent {
+      width: fit-content;
+      background-color: crimson;
+      color: white;
+      font-family: iranYekan;
+      font-size: 13px;
+      border-radius: 20px;
+      padding: 3px 8px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+  }
+  .oldPrice {
+    width: 100%;
+    font-family: iranYekan;
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+    text-decoration: line-through;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  &.border-radius-top-bottom-right {
+    border-radius: 0px 10px 10px 0px;
+  }
+  &.border-radius-top-bottom-left {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  &.seeMoreSlider {
+    justify-content: center;
+    gap: 20px;
+    .moreLogo {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #19bfd3;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: #19bfd3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3px;
+        padding-top: 3px;
+        box-sizing: border-box;
+      }
+    }
+    .seeAll {
+      color: rgb(90, 89, 89);
+      font-family: iranYekan;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.amazigSlider {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &.swiper-button-disabled {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+div.fasele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: 350px;
+    border-radius: 30px;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+
+div.fasele img.poto {
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    display: block;
+}
